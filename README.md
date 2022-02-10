@@ -1,7 +1,30 @@
 # Deep Learning and Directional Stock Market Forecast
 > This project explores various novel deep learning models in the context of directional stock market forecast and evaluates their performances in a simulated market. The models were trained via Google Cloud TPU, and its prediction outputs were used to form custom trade strategies to compare against a base real-life buy and hold strategy.
 
-## Data
+## 1. Code Structure
+    .
+    ├── code                    # Code files
+    │   ├── models              # Model training and prediction output 
+    │   ├── simulation          # Market simulation and model performance evaluation
+    ├── data                    # NQ Mobile daily stock price dataset
+    ├── doc                     # Documentation files
+    └── README.md
+
+## 2. Prerequisites and Dependencies
+- Jupyter Notebook
+- Google Colab (with TPU and GPU)
+- Numpy: Used for Arrays
+- Pandas: Used for Dataframes
+- Seaborn: Used for Advanced Plots
+- Matplotlib: Used for Plots and Graphical Representations
+- Technical Analysis Library: Used for Generation of Technical Indicators
+- Scikit-Learn: Used for Machine Learning Techniques
+- PyWavelets: Used for Discrete Wavelet Transformation
+- Keras: Used for Deep Learning Models
+- SPORCO: Used for Convolutional Sparse Coding
+- Mcfly: Used for Time-Series Classification
+
+## 3. Data
 The data represents daily stock price indicators of the NQ Mobile Inc. stock from the 2nd of September 1999 through to the 3rd of January 2018 depicting 4628 trading days across almost 10 years. NQ Mobile has since rebranded and is now tradable on the US stock market under the name Link Motion.
 
 | Technical Indicators | Description |
@@ -24,14 +47,14 @@ The data represents daily stock price indicators of the NQ Mobile Inc. stock fro
 | WVAD | William’s Variable Accumulation Distribution: measures the buying and selling pressure |
 | ROC | Rate Of Change: shows the speed at which the stock’s price is changing |
 
-## Models
+## 4. Models
 - Convolutional Neural Network (CNN)
 - Convolutional Sparse Coding (CSC)
 - Temporal Convolutional Network / WaveNet (TCN)
 - Bi-directional LSTM
 - Bi-directional LSTM with Autoencoders
 
-## Directional Prediction Criteria
+## 5. Directional Prediction Criteria
 The directional prediction of the next day’s stock price is determined by computing percentage changes from the predicted stock price (t+1)’ to the previous day stock price (t) of the time series.
 
 | Category| Criteria |
@@ -40,21 +63,19 @@ The directional prediction of the next day’s stock price is determined by comp
 | No Change | 0.97% × t < (t+1)’ < 1.03% * t |
 | Down | (t+1)’ ≤ 0.97% * t |
 
-## Methodology
+## 6. Methodology
 <img src="/doc/methodology.png" width="600" height="680">
 
-## Model Trading Strategies
+## 7. Model Trading Strategies
 #### Strategy 1 
-On day t, if the model predicts "Up" on day t+1, then buy the stock on day t and immediately sell on t+1. Otherwise, do nothing. 
 
 <img src="/doc/strategy-1.png" width="430" height="500">
 
 #### Strategy 2 
-On day t, if the model predicts "Up" on day t+1, then buy the stock on day t and hold until the model predicts a "Down" on (t+1)+α. 
 
 <img src="/doc/strategy-2.png" width="500" height="600">
 
-## Model Results
+## 8. Model Results
 Mean directional accuracies for the 5 models' predictions on 3 price directions ("Up", "Down", "No Change") turned out to be higher than random guessing (33%).
 
 | Metrics| CNN | CSC | TCN | Bi-LSTM | Bi-LSTM Autoencoders |
@@ -63,7 +84,7 @@ Mean directional accuracies for the 5 models' predictions on 3 price directions 
 | MAPE (Mean Abs. Percentage Error) | 1.43% | 0.91% | - | 1.39% | 1.61% |
 | MDA (Mean Directional Accuracy) | 41.15% | 46.75% | 40.79% | 41.32% | 40.37% |
 
-## Simulation Results
+## 9. Simulation Results
 Stock market for NQ Mobile Inc. was simulated for 2 periods of test time frames:
 - **Period 1**: 18-Jan-2007 to 30-Oct-2008
 - **Period 2**: 11-Mar-2016 to 29-Dec-2017
