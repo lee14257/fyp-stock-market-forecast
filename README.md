@@ -67,13 +67,10 @@ The directional prediction of the next day’s stock price is determined by comp
 <img src="/doc/methodology.png" width="600" height="680">
 
 ## 7. Model Trading Strategies
-#### Strategy 1 
 
 <img src="/doc/strategy-1.png" width="430" height="500">
 
-#### Strategy 2 
-
-<img src="/doc/strategy-2.png" width="500" height="600">
+<img src="/doc/strategy-2.png" width="500" height="650">
 
 ## 8. Model Results
 Mean directional accuracies for the 5 models' predictions on 3 price directions ("Up", "Down", "No Change") turned out to be higher than random guessing (33%).
