@@ -74,7 +74,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
-| TCN | 71.1% |
+| TCN (WaveNet) | 71.1% |
 | Bi-directional LSTM + auto | 41.7% |
 | Bi-directional LSTM | 12.1% |
 | CSC | 6.2% |
@@ -88,7 +88,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
-| TCN | 37.0% |
+| TCN (WaveNet) | 37.0% |
 | Bi-directional LSTM + auto | 31.3% |
 | Bi-directional LSTM | 6.3% |
 | CSC | 8.3% |
@@ -102,7 +102,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
-| TCN | 35.1% |
+| TCN (WaveNet) | 35.1% |
 | Bi-directional LSTM + auto | 25.4% |
 | Bi-directional LSTM | 20.4% |
 | CSC | 22.2% |
@@ -116,7 +116,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
-| TCN | 45.6% |
+| TCN (WaveNet) | 45.6% |
 | Bi-directional LSTM + auto | 25.7% |
 | Bi-directional LSTM | 16.0% |
 | CSC | 30.3% |
