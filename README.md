@@ -72,8 +72,7 @@ Stock market for NQ Mobile Inc. was simulated for 2 periods of time:
 
 The 2 strategies were applied to the model prediction outputs, and the Total Cumulative Daily Returns (%) was measured and compared.
 
-#### Period 1 + Strategy 1
-![alt text](/doc/period-1-strategy-1.png)
+### Period 1 + Strategy 1
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
@@ -84,8 +83,10 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | -0.01% |
 | Buy and Hold | -40.3% |
 
-#### Period 1 + Strategy 2
-![alt text](/doc/period-1-strategy-2.png)
+![alt text](/doc/period-1-strategy-1.png)
+
+
+### Period 1 + Strategy 2
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
@@ -96,8 +97,10 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | 0% |
 | Buy and Hold | -40.3% |
 
-#### Period 2 + Strategy 1
-![alt text](/doc/period-2-strategy-1.png)
+![alt text](/doc/period-1-strategy-2.png)
+
+
+### Period 2 + Strategy 1
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
@@ -108,8 +111,10 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | 20.1% |
 | Buy and Hold | 40% |
 
-#### Period 2 + Strategy 2
-![alt text](/doc/period-2-strategy-2.png)
+![alt text](/doc/period-2-strategy-1.png)
+
+
+### Period 2 + Strategy 2
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
@@ -119,5 +124,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CSC | 30.3% |
 | CNN | 31.2% |
 | Buy and Hold | 40% |
+
+![alt text](/doc/period-2-strategy-2.png)
 
 
