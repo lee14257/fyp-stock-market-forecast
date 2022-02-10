@@ -49,7 +49,7 @@ The directional prediction of the next day’s stock price is determined by comp
 #### Strategy 1 
 On day t, if the model predicts "Up" on day t+1, then buy the stock on day t and immediately sell on t+1. Otherwise, do nothing. 
 
-<img src="/doc/strategy-1.png" width="400" height="600">
+<img src="/doc/strategy-1.png" width="550" height="550">
 
 #### Strategy 2 
 On day t, if the model predicts "Up" on day t+1, then buy the stock on day t and hold until the model predicts a "Down" on (t+1)+α. 
@@ -67,11 +67,12 @@ Mean directional accuracies for the 5 models' predictions on 3 price directions 
 
 ## Simulation Results
 Stock market for NQ Mobile Inc. was simulated for 2 periods of time:
-- Period 1: 18/01/2007 - 30/10/2008
-- Period 2: 11/03/2016 - 29/12/2017
+- **Period 1**: 18-Jan-2007 - 30-Oct-2008
+- **Period 2**: 11-Mar-2016 - 29-Dec-2017
 
 The 2 strategies were applied to the model prediction outputs, and the Total Cumulative Daily Returns (%) was measured and compared.
 
+#### Period 1 + Strategy 1
 ![alt text](/doc/period-1-strategy-1.png)
 
 | Models | Cumulative Daily Returns |
@@ -83,6 +84,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | -0.01% |
 | Buy and Hold | -40.3% |
 
+#### Period 1 + Strategy 2
 ![alt text](/doc/period-1-strategy-2.png)
 
 | Models | Cumulative Daily Returns |
@@ -94,6 +96,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | 0% |
 | Buy and Hold | -40.3% |
 
+#### Period 2 + Strategy 1
 ![alt text](/doc/period-2-strategy-1.png)
 
 | Models | Cumulative Daily Returns |
@@ -105,6 +108,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | 20.1% |
 | Buy and Hold | 40% |
 
+#### Period 2 + Strategy 2
 ![alt text](/doc/period-2-strategy-2.png)
 
 | Models | Cumulative Daily Returns |
