@@ -49,12 +49,12 @@ The directional prediction of the next day’s stock price is determined by comp
 #### Strategy 1 
 On day t, if the model predicts "Up" on day t+1, then buy the stock on day t and immediately sell on t+1. Otherwise, do nothing. 
 
-![alt text](/doc/strategy-1.png)
+<img src="/doc/strategy-1.png" width="400" height="600">
 
 #### Strategy 2 
 On day t, if the model predicts "Up" on day t+1, then buy the stock on day t and hold until the model predicts a "Down" on (t+1)+α. 
 
-![alt text](/doc/strategy-2.png)
+<img src="/doc/strategy-2.png" width="400" height="600">
 
 ## Model Results
 Mean directional accuracies for the 5 models' predictions on 3 price directions ("Up", "Down", "No Change") turned out to be higher than random guessing (33%).
