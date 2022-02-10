@@ -64,9 +64,9 @@ Mean directional accuracies for the 5 models' predictions on 3 price directions 
 | MDA (Mean Directional Accuracy) | 41.15% | 46.75% | 40.79% | 41.32% | 40.37% |
 
 ## Simulation Results
-Stock market for NQ Mobile Inc. was simulated for 2 periods of time:
-- **Period 1**: 18-Jan-2007 - 30-Oct-2008
-- **Period 2**: 11-Mar-2016 - 29-Dec-2017
+Stock market for NQ Mobile Inc. was simulated for 2 periods of test time frames:
+- **Period 1**: 18-Jan-2007 to 30-Oct-2008
+- **Period 2**: 11-Mar-2016 to 29-Dec-2017
 
 The 2 strategies were applied to the model prediction outputs, and the Total Cumulative Daily Returns (%) was measured and compared.
 
