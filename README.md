@@ -5,7 +5,7 @@
     .
     ├── code                    # Code files
     │   ├── models              # Model training and prediction output 
-    │   ├── simulation          # Market simulation and model performance evaluation
+    │   ├── market-simulation   # Market simulation and model performance evaluation
     ├── data                    # NQ Mobile daily stock price dataset
     ├── doc                     # Documentation files
     └── README.md
