@@ -1,7 +1,5 @@
 # Deep Learning and Directional Stock Market Forecast
-Directional stock market forecast using deep learning models
-
-Models were trained via Google Cloud TPU, and its prediction outputs were used to form custom trade strategies that were simulated for NQ Mobile stocks.
+> This is a Final Year Project involving research on directional stock market forecast. The project explored several novel deep learning models and evaluated their performances in stock market forecasting. The models were trained via Google Cloud TPU, and its prediction outputs were used to form custom trade strategies that were simulated for NQ Mobile stocks.
 
 ## Data
 The data represents daily stock price indicators of the NQ Mobile Inc. stock from the 2nd of September 1999 through to the 3rd of January 2018 depicting 4628 trading days across almost 10 years. NQ Mobile has since rebranded and is now tradable on the US stock market under the nameLink Motion.
