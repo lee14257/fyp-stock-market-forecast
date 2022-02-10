@@ -1,8 +1,8 @@
 # Deep Learning and Directional Stock Market Forecast
-> This is a Final Year Project involving research on directional stock market forecast. The project explored several novel deep learning models and evaluated their performances in stock market forecasting. The models were trained via Google Cloud TPU, and its prediction outputs were used to form custom trade strategies that were simulated for NQ Mobile stocks.
+> This project explores various novel deep learning models in the context of directional stock market forecast and evaluates their performances in a simulated market. The models were trained via Google Cloud TPU, and its prediction outputs were used to form custom trade strategies to compare against a base real-life buy and hold strategy.
 
 ## Data
-The data represents daily stock price indicators of the NQ Mobile Inc. stock from the 2nd of September 1999 through to the 3rd of January 2018 depicting 4628 trading days across almost 10 years. NQ Mobile has since rebranded and is now tradable on the US stock market under the nameLink Motion.
+The data represents daily stock price indicators of the NQ Mobile Inc. stock from the 2nd of September 1999 through to the 3rd of January 2018 depicting 4628 trading days across almost 10 years. NQ Mobile has since rebranded and is now tradable on the US stock market under the name Link Motion.
 
 | Technical Indicators | Description |
 | --- | --- |
@@ -31,8 +31,8 @@ The data represents daily stock price indicators of the NQ Mobile Inc. stock fro
 - Bi-directional LSTM
 - Bi-directional LSTM with Autoencoders
 
-## Directional Predictions
-The directional prediction of the next day’s stock price is determined by computing the change from the predicted stock price (t+1)’ to the stock price of the last day from the input time-series (t).
+## Directional Prediction Criteria
+The directional prediction of the next day’s stock price is determined by computing percentage changes from the predicted stock price (t+1)’ to the previous day stock price (t) of the time series.
 
 | Category| Criteria |
 | --- | --- |
