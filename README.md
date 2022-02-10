@@ -3,7 +3,7 @@
 
 ## 1. Code Structure
     .
-    ├── code                    # Code files
+    ├── code                    # Code files (.ipynb)
     │   ├── models              # Model training and prediction output 
     │   ├── market-simulation   # Market simulation and model performance evaluation
     ├── data                    # NQ Mobile daily stock price dataset
