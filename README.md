@@ -43,18 +43,18 @@ The directional prediction of the next day’s stock price is determined by comp
 | Down | (t+1)’ ≤ 0.97% * t |
 
 ## Methodology
-![alt text](/docs/methodology.png)
+![alt text](/doc/methodology.png)
 
 ## Model Trading Strategies
 #### Strategy 1 
 On day t, if the model predicts "Up" on day t+1, then buy the stock on day t and immediately sell on t+1. Otherwise, do nothing. 
 
-![alt text](/docs/strategy-1.png)
+![alt text](/doc/strategy-1.png)
 
 #### Strategy 2 
 On day t, if the model predicts "Up" on day t+1, then buy the stock on day t and hold until the model predicts a "Down" on (t+1)+α. 
 
-![alt text](/docs/strategy-2.png)
+![alt text](/doc/strategy-2.png)
 
 ## Model Results
 Mean directional accuracies for the 5 models' predictions on 3 price directions ("Up", "Down", "No Change") turned out to be higher than random guessing (33%).
@@ -72,7 +72,7 @@ Stock market for NQ Mobile Inc. was simulated for 2 periods of time:
 
 The 2 strategies were applied to the model prediction outputs, and the Total Cumulative Daily Returns (%) was measured and compared.
 
-![alt text](/docs/period-1-strategy-1.png)
+![alt text](/doc/period-1-strategy-1.png)
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
@@ -83,7 +83,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | -0.01% |
 | Buy and Hold | -40.3% |
 
-![alt text](/docs/period-1-strategy-2.png)
+![alt text](/doc/period-1-strategy-2.png)
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
@@ -94,7 +94,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | 0% |
 | Buy and Hold | -40.3% |
 
-![alt text](/docs/period-2-strategy-1.png)
+![alt text](/doc/period-2-strategy-1.png)
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
@@ -105,7 +105,7 @@ The 2 strategies were applied to the model prediction outputs, and the Total Cum
 | CNN | 20.1% |
 | Buy and Hold | 40% |
 
-![alt text](/docs/period-2-strategy-2.png)
+![alt text](/doc/period-2-strategy-2.png)
 
 | Models | Cumulative Daily Returns |
 | --- | --- |
